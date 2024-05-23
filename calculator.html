@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Spending Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Genshin Impact 5-Star Spending Calculator</h1>
+        <div>
+            <label for="numCharacters">Number of 5-Star Characters:</label>
+            <input type="number" id="numCharacters" placeholder="Enter number of characters">
+        </div>
+        <div>
+            <label for="minCost">Minimum Cost per Character ($):</label>
+            <input type="number" id="minCost" placeholder="Enter minimum cost" value="200">
+        </div>
+        <div>
+            <label for="maxCost">Maximum Cost per Character ($):</label>
+            <input type="number" id="maxCost" placeholder="Enter maximum cost" value="500">
+        </div>
+        <button onclick="calculateSpending()">Calculate</button>
+        <h2 id="result"></h2>
+    </div>
+    
+    <div class="calculator">
+        <h1>Genshin Impact 5-Star Weapon Spending Calculator</h1>
+        <div>
+            <label for="numWeapons">Number of 5-Star Weapons:</label>
+            <input type="number" id="numWeapons" placeholder="Enter number of weapons">
+        </div>
+        <div>
+            <label for="minWeaponCost">Minimum Cost per Weapon ($):</label>
+            <input type="number" id="minWeaponCost" placeholder="Enter minimum cost" value="200">
+        </div>
+        <div>
+            <label for="maxWeaponCost">Maximum Cost per Weapon ($):</label>
+            <input type="number" id="maxWeaponCost" placeholder="Enter maximum cost" value="600">
+        </div>
+        <button onclick="calculateWeaponSpending()">Calculate</button>
+        <h2 id="weaponResult"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
